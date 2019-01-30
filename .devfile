@@ -1,0 +1,27 @@
+specVersion: 0.0.1
+name: che-k8s-plugin
+projects:
+  - name: simple-nodejs-weather-app
+    source:
+      type: git
+      location: 'https://github.com/azatsarynnyy/simple-nodejs-weather-app.git'
+tools:
+  - name: theia-ide
+    type: cheEditor
+    id: https://raw.githubusercontent.com/azatsarynnyy/che7-plugin-registry/master/org.eclipse.che.editor.theia:1.0.0
+  - name: exec-plugin
+    type: chePlugin
+    id: che-machine-exec-plugin:0.0.1
+  - name: builder-plugin
+    type: chePlugin
+    id: https://raw.githubusercontent.com/azatsarynnyy/che7-plugin-registry/master/org.eclipse.che.plugin.image-builder:1.0.0
+  - name: yaml-plugin
+    type: chePlugin
+    id: https://raw.githubusercontent.com/azatsarynnyy/che7-plugin-registry/master/org.eclipse.che.vscode.yaml:1.0.0
+commands:
+  - name: build image
+    actions:
+      - type: exec
+        tool: builder-plugin
+        command: buildah
+        workdir: /projects/simple-nodejs-weather-app
