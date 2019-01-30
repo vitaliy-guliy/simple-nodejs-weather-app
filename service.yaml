@@ -1,0 +1,15 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: node-web-app
+  namespace: k8s-demo
+  labels:
+    k8s-app: node-web-app
+spec:
+  selector:
+    k8s-app: node-web-app
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: app-port
+  type: NodePort
