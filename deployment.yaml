@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         -
-          image: "azatsarynnyy/simple-nodejs-weather-app:1.0.0"
+          image: "<your_dockerhub_id>/simple-nodejs-weather-app:1.0.0"
           imagePullPolicy: Always
           name: node-web-app
           ports:
