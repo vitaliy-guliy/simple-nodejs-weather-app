@@ -19,7 +19,9 @@ spec:
     spec:
       containers:
         -
-          image: "<your_dockerhub_id>/simple-nodejs-weather-app:1.0.0"
+          image: node:8
+          command: ['/bin/sh', '-c']
+          args: ['cd /home && git clone https://github.com/azatsarynnyy/simple-nodejs-weather-app.git demo && cd demo/ && npm install && npm start']
           imagePullPolicy: Always
           name: node-web-app
           ports:
