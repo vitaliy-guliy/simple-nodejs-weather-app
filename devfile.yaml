@@ -8,13 +8,13 @@ projects:
 components:
   - name: theia-ide
     type: cheEditor
-    id: org.eclipse.che.editor.theia:next
+    id: 'org.eclipse.che.editor.theia:next'
   - name: exec-plugin
     type: chePlugin
-    id: che-machine-exec-plugin:0.0.1
+    id: 'che-machine-exec-plugin:0.0.1'
   - name: k8s-plugin
     type: chePlugin
-    id: ms-kubernetes-tools.vscode-kubernetes-tools:0.1.17
+    id: 'ms-kubernetes-tools.vscode-kubernetes-tools:0.1.17'
   - name: yaml-plugin
     type: chePlugin
-    id: redhat.vscode-yaml:0.3.0
+    id: 'redhat.vscode-yaml:0.3.0'
