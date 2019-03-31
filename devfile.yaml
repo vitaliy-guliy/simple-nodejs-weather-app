@@ -1,10 +1,5 @@
 specVersion: 0.0.1
 name: k8s-plugin
-projects:
-  - name: simple-nodejs-weather-app
-    source:
-      type: git
-      location: 'https://github.com/azatsarynnyy/simple-nodejs-weather-app.git'
 components:
   - name: theia-ide
     type: cheEditor
