@@ -5,7 +5,7 @@ projects:
     source:
       type: git
       location: 'https://github.com/azatsarynnyy/simple-nodejs-weather-app.git'
-tools:
+components:
   - name: theia-ide
     type: cheEditor
     id: org.eclipse.che.editor.theia:next
