@@ -1,10 +1,6 @@
 specVersion: 0.0.1
 name: k8s-plugin
 components:
-  - type: cheEditor
-    id: 'org.eclipse.che.editor.theia:next'
-  - type: chePlugin
-    id: 'che-machine-exec-plugin:0.0.1'
   - type: chePlugin
     id: 'ms-kubernetes-tools.vscode-kubernetes-tools:0.1.17'
   - type: chePlugin
