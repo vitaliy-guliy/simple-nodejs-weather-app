@@ -1,9 +1,16 @@
-specVersion: 0.0.1
-name: k8s-plugin
+apiVersion: 1.0.0
+
+metadata:
+  name: test-kubernetes-plugin
+
+projects:
+  - name: simple-nodejs-weather-app
+    source:
+      location: 'https://github.com/vitaliy-guliy/simple-nodejs-weather-app'
+      type: git
+      branch: master
+
 components:
-  - type: cheEditor
-    id: 'eclipse/che-theia/next'
-  - type: chePlugin
-    id: 'ms-kubernetes-tools/vscode-kubernetes-tools/0.1.17'
-  - type: chePlugin
-    id: 'redhat/vscode-yaml/0.4.0'
+  - id: ms-kubernetes-tools/vscode-kubernetes-tools/latest
+    memoryLimit: 4096M
+    type: chePlugin
