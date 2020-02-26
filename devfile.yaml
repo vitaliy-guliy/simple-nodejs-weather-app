@@ -6,7 +6,7 @@ metadata:
 projects:
   - name: simple-nodejs-weather-app
     source:
-      location: 'https://github.com/vitaliy-guliy/simple-nodejs-weather-app'
+      location: 'https://github.com/vitaliy-guliy/simple-nodejs-weather-app.git'
       type: git
       branch: master
 
